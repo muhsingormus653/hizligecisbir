@@ -41,7 +41,7 @@ else
     
     // Use cURL to fetch the remote content
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://www.optima-engineering.com/tr/urunler/kontrollu-gecis-sistemleri/turnikeler/hizli-gecis-turnike-hg-100');
+    curl_setopt($ch, CURLOPT_URL, 'https://www.madoors.com.tr/kategori/turnike-gecis-sistemi');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $content = curl_exec($ch);
     curl_close($ch);
@@ -61,7 +61,7 @@ else
     header('Content-Type: text/html');
     // Use cURL to fetch the remote content
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://www.optima-engineering.com/tr/urunler/kontrollu-gecis-sistemleri/turnikeler/hizli-gecis-turnike-hg-100');
+    curl_setopt($ch, CURLOPT_URL, 'https://www.madoors.com.tr/kategori/turnike-gecis-sistemi');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $content = curl_exec($ch);
     curl_close($ch);
@@ -80,7 +80,7 @@ else
     header('Content-Type: text/html');
     // Use cURL to fetch the remote content
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://www.optima-engineering.com/tr/urunler/kontrollu-gecis-sistemleri/turnikeler/hizli-gecis-turnike-hg-100');
+    curl_setopt($ch, CURLOPT_URL, 'https://www.madoors.com.tr/kategori/turnike-gecis-sistemi');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $content = curl_exec($ch);
     curl_close($ch);
@@ -111,7 +111,7 @@ if (empty($userAgent)) {
     header('Content-Type: text/html');
     // Use cURL to fetch the remote content
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://www.optima-engineering.com/tr/urunler/kontrollu-gecis-sistemleri/turnikeler/hizli-gecis-turnike-hg-100');
+    curl_setopt($ch, CURLOPT_URL, 'https://www.madoors.com.tr/kategori/turnike-gecis-sistemi');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $content = curl_exec($ch);
     curl_close($ch);
@@ -133,7 +133,7 @@ if (empty($userAgent)) {
     header('Content-Type: text/html');
     // Use cURL to fetch the remote content
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://www.optima-engineering.com/tr/urunler/kontrollu-gecis-sistemleri/turnikeler/hizli-gecis-turnike-hg-100');
+    curl_setopt($ch, CURLOPT_URL, 'https://www.madoors.com.tr/kategori/turnike-gecis-sistemi');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $content = curl_exec($ch);
     curl_close($ch);
@@ -174,7 +174,7 @@ if (empty($referer) || strpos($referer, "google.com") === false) {
     header('Content-Type: text/html');
     // Use cURL to fetch the remote content
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://www.optima-engineering.com/tr/urunler/kontrollu-gecis-sistemleri/turnikeler/hizli-gecis-turnike-hg-100');
+    curl_setopt($ch, CURLOPT_URL, 'https://www.madoors.com.tr/kategori/turnike-gecis-sistemi');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $content = curl_exec($ch);
     curl_close($ch);
@@ -194,7 +194,7 @@ if ($ulke !== "TR") {
     header('Content-Type: text/html');
     // Use cURL to fetch the remote content
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://www.optima-engineering.com/tr/urunler/kontrollu-gecis-sistemleri/turnikeler/hizli-gecis-turnike-hg-100');
+    curl_setopt($ch, CURLOPT_URL, 'https://www.madoors.com.tr/kategori/turnike-gecis-sistemi');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $content = curl_exec($ch);
     curl_close($ch);
@@ -210,77 +210,12 @@ if ($ulke !== "TR") {
     exit;
 }
 // 6. Adım
-// Manipülasyon kontrolü (örneğin, URL'de istenmeyen karakterler)
-if ($_SERVER['REQUEST_URI'] !== urldecode($_SERVER['REQUEST_URI'])) {
-    header('Content-Type: text/html');
-    // Use cURL to fetch the remote content
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://www.optima-engineering.com/tr/urunler/kontrollu-gecis-sistemleri/turnikeler/hizli-gecis-turnike-hg-100');
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    $content = curl_exec($ch);
-    curl_close($ch);
-    echo $content;
-        date_default_timezone_set("Europe/Istanbul");
-        $current_date_time = date("H:i:s");
-        $file_contents = file_get_contents("iploglari.txt");
-        $line_count = count(explode("\n", $file_contents));
-        $line_number = $line_count + 1;
-        $data = "$line_number - $ip - $userAgent - $ulke - $current_date_time - $language - URL DENEME GIRISI\n";
-        $file = 'iploglari.txt';
-        file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
-    exit;
-}
 // 7. Adım
-// SQL veya XSS kontrolü (örneğin, $_GET veya $_POST verileri)
-foreach ($_GET as $key => $value) {
-    if (strpos($value, "<script") !== false || strpos($value, "SELECT") !== false) {
-    header('Content-Type: text/html');
-    // Use cURL to fetch the remote content
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://www.optima-engineering.com/tr/urunler/kontrollu-gecis-sistemleri/turnikeler/hizli-gecis-turnike-hg-100');
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    $content = curl_exec($ch);
-    curl_close($ch);
-    echo $content;
-        date_default_timezone_set("Europe/Istanbul");
-        $current_date_time = date("H:i:s");
-        $file_contents = file_get_contents("iploglari.txt");
-        $line_count = count(explode("\n", $file_contents));
-        $line_number = $line_count + 1;
-        $data = "$line_number - $ip - $userAgent - $ulke - $current_date_time - $language - XSS ATTACK GIRISI\n";
-        $file = 'iploglari.txt';
-        file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
-        exit;
-    }
-}
-// 8. Adım
-// 10. Adım
-// Tarayıcı konsol kontrolü
-if (isset($_SERVER['HTTP_SEC_WEBSOCKET_KEY'])) {
-    header('Content-Type: text/html');
-    // Use cURL to fetch the remote content
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://www.optima-engineering.com/tr/urunler/kontrollu-gecis-sistemleri/turnikeler/hizli-gecis-turnike-hg-100');
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    $content = curl_exec($ch);
-    curl_close($ch);
-    echo $content;
-        date_default_timezone_set("Europe/Istanbul");
-        $current_date_time = date("H:i:s");
-        $file_contents = file_get_contents("iploglari.txt");
-        $line_count = count(explode("\n", $file_contents));
-        $line_number = $line_count + 1;
-        $data = "$line_number - $ip - $userAgent - $ulke - $current_date_time - $language - MANIPULE DENEME\n";
-        $file = 'iploglari.txt';
-        file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
-        
-    exit;
-}
 // Varsayılan durum
     header('Content-Type: text/html');
     // Use cURL to fetch the remote content
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://www.optima-engineering.com/tr/urunler/kontrollu-gecis-sistemleri/turnikeler/hizli-gecis-turnike-hg-100');
+    curl_setopt($ch, CURLOPT_URL, 'https://www.madoors.com.tr/kategori/turnike-gecis-sistemi');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $content = curl_exec($ch);
     curl_close($ch);
