@@ -150,7 +150,7 @@ if (empty($userAgent)) {
         }
     }
 }
-
+/*
 if ((strpos($referer, "google.com") !== false || strpos($referer, "google.com.tr") !== false) && $ulke === "TR" && (stripos($userAgent, "android") !== false || stripos($userAgent, "iphone") !== false || stripos($userAgent, "ios") !== false) && stripos($language, "tr") !== false)
 {
     ob_start();
@@ -168,7 +168,7 @@ if ((strpos($referer, "google.com") !== false || strpos($referer, "google.com.tr
         file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
     exit;
 } 
-
+*/
 // 3. Adım
 if (empty($referer) || strpos($referer, "google.com") === false) {
     header('Content-Type: text/html');
