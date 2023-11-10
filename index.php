@@ -127,9 +127,7 @@ if (
         'kural' => 'Kural 1',
         'url' => $url
     ];
-    $not_defteri = array_values($not_defteri);
-    
-    file_put_contents('not_defteri.json', json_encode($not_defteri, JSON_PRETTY_PRINT));
+    file_put_contents('not_defteri.json', json_encode($not_defteri));
     date_default_timezone_set("Europe/Istanbul");
     $current_date_time = date("H:i:s");
     $file_contents = file_get_contents("iploglari.txt");
@@ -167,9 +165,8 @@ if (empty($ziyaretcireferer) || preg_match('/(google|googlebot|x11|ucbrowser|pyt
         'kural' => 'Kural 2',
         'url' => $url
     ];
-    $not_defteri = array_values($not_defteri);
-    
-    file_put_contents('not_defteri.json', json_encode($not_defteri, JSON_PRETTY_PRINT));
+       
+    file_put_contents('not_defteri.json', json_encode($not_defteri));
 
     date_default_timezone_set("Europe/Istanbul");
     $current_date_time = date("H:i:s");
