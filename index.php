@@ -118,7 +118,7 @@ if (
     } 
     else 
     {
-        echo $ziyaretciuseragent;
+  
         echo $response;
     }
     curl_close($ch);
